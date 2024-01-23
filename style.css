@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#result{
+	width: 500px;
+	height: 70px;
+	border: none;
+	font-size: 21px;
+	text-align: center;
+    overflow-x: scroll;
+}
+
+.cal-screen{
+	width: 500px;
+	border: 1px solid black;
+    font-weight: bold;
+	height: 70px;
+}
+
+.main-box{
+	width: 500px;
+	height: 420px;
+	border: 1px solid black;
+    font-weight: bold;
+	background: #d5c4c7;
+}
+
+.boxes{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: self-start;
+	position: relative;
+}
+
+.button,
+.buttons{
+	border-radius: 10px;
+	width: 80px;
+	margin: 10px;
+	height: 60px;
+	font-size: 32px;
+	outline: none;
+	border: 1px solid black;
+	background: rgb(84, 165, 84);
+    box-shadow: 3px 3px 9px black;
+}
+
+.button:hover,
+.buttons:hover{
+    box-shadow: 4px 4px 9px black;
+	background: rgb(59, 145, 80);
+}
+
+.cal{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#clear{
+    color: red;
+    font-size: 35px;
+}
+
+@media only screen and (max-width: 500px){
+.button,
+.buttons{
+	border-radius: 10px;
+	width: 60px;
+	margin: 10px;
+	height: 40px;
+	font-size: 17px;
+	outline: none;
+	border: 1px solid black;
+	background: rgb(84, 165, 84);
+}
+.main-box{
+	width: 300px;
+	height: 320px;
+	border: 1px solid black;
+}
+#result, .cal-screen, .main-box{
+	width: 340px;
+    font-weight: bold;
+}
+#clear{
+    font-size: 22px;
+}
+}
